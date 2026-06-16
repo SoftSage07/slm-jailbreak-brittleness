@@ -272,7 +272,7 @@ def main():
     run_metadata = {
         "model_path": str(model_path),
         "model_tag": args.model_tag,
-        "input_csv": str(input_csv_path),
+        "input_csv_path": str(input_csv_path),
         "num_examples": int(len(df)),
         "prompt_col": args.prompt_col,
         "label_col": args.label_col,
