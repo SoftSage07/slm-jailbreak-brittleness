@@ -213,7 +213,6 @@ def main():
     print("="*80)
     print(f"Extracting Activations during Inference")
     print("-"*80)
-    print("\n")
     print(f"INFO: Loading Dataset...")
     print(f"INFO: Input CSV: {input_csv_path}")
     df = pd.read_csv(input_csv_path)
