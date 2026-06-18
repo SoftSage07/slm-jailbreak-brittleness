@@ -33,4 +33,5 @@ python run_inference_with_activations.py \
   --label_col label \
   --output_dir /export/home2/sati0004/SouthAI-Safety-hackathon/output/xstest \
   --max_new_tokens 256 \
-  --dtype bfloat16
+  --dtype bfloat16 \
+  --dataset mixed

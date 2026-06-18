@@ -194,6 +194,12 @@ def main():
         default="bfloat16",
         choices=["float16", "bfloat16", "float32"]
     )
+    parser.add_argument(
+        "--dataset", 
+        type=str,
+        default="mixed",
+        help="Dataset name to be added into id column for activation."
+    )
 
     args = parser.parse_args()
 
@@ -208,6 +214,9 @@ def main():
 
     responses_path = output_dir / "responses.jsonl"
     metadata_path = output_dir / "run_metadata.json"
+
+    # id header
+    dataset = args.dataset
 
 
     print("="*80)
@@ -226,7 +235,7 @@ def main():
 
     if "id" not in df.columns:
         print(f"WARNING: No 'id' column found. Creating one now. ")
-        df.insert(0, "id", [f"xstest_{i:05d}" for i in range(len(df))])
+        df.insert(0, "id", [f"{dataset}_{i:05d}" for i in range(len(df))])
         
     if args.prompt_col not in df.columns:
         raise ValueError(
