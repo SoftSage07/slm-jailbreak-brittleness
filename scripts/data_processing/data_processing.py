@@ -2,6 +2,16 @@
 data_processing.py
 ---------
 This code contains certain useful helper functions that can be reused. 
+
+USAGE:
+python .\data_processing.py \
+    --activation_dir C:\Users\SATI0004\Documents\SouthAI-Safety-hackathon\output\modified_advbench\mistral_12b_instruct\activations \
+    --labels_csv C:\Users\SATI0004\Documents\SouthAI-Safety-hackathon\datasets\final_modified_advbench.csv \
+    --output_filename combined_advbench_activations \
+    --output_dir C:\Users\SATI0004\Documents\SouthAI-Safety-hackathon\output\modified_advbench\mistral_12b_instruct
+
+NOTE: For output_filename, if you're running on the XSTest, please pass in the argument: 'combined_xstest_activations'.
+
 """
 
 # Imports
