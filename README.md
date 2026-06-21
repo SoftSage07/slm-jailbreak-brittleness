@@ -19,8 +19,9 @@ This lets us distinguish whether unsafe behaviour happens because the model cann
 
 | Model Family | Smaller Model | Larger Model |
 |---|---|---|
-| Qwen | Qwen-7B-Instruct | Qwen-14B-Instruct |
-| Mistral | Mistral-7B-Instruct | Mistral-12B-Instruct |
+| Mistral | Mistral-7B-Instruct-v0.3 | Mistral-Nemo-Instruct (12B) |
+| Qwen | Qwen2.5-0.5B-Instruct | Qwen2.5-14B-Instruct |
+| Qwen | Qwen2.5-1.5B-Instruct | Qwen2.5-7B-Instruct |
 
 ## Datasets
 
